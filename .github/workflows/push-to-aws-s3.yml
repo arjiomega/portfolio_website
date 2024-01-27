@@ -8,20 +8,26 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: build
-        working-directory: /portfolio_app
+        working-directory: ./portfolio_app
         run: npm install && npm run build
 
+      - name: Display structure of before files
+        run: ls -R
+
       # 👇 Store the dist folder
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: build
-          path: /portfolio_app/build/
+          path: ./portfolio_app/build/
+
+      - name: Display structure of after files
+        run: ls -R
 
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: build
       # 👇 Get the dist folder
