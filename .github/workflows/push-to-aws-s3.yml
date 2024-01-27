@@ -2,6 +2,11 @@ name: Push to S3
 
 on: [push]
 
+defaults:
+  run:
+    working-directory: ./portfolio_app
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
