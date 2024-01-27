@@ -1,7 +1,6 @@
 import React from 'react';
 import { Nav } from "./Nav";
 import { Header } from './Header';
-import { AboutMe } from './AboutMe';
 import { Skills } from './Skills';
 import { Projects } from './Projects';
 import { Contacts } from './Contacts';
