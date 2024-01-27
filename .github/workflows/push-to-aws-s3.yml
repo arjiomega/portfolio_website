@@ -2,25 +2,20 @@ name: Push to S3
 
 on: [push]
 
-defaults:
-  run:
-    working-directory: ./portfolio_app
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: build
-        working-directory: ./portfolio_app
+        working-directory: /portfolio_app
         run: npm install && npm run build
 
       # 👇 Store the dist folder
       - uses: actions/upload-artifact@v3
         with:
           name: build
-          path: ./portfolio_app/build/
+          path: /portfolio_app/build/
 
   deploy:
     needs: [build]
