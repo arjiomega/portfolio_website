@@ -19,8 +19,8 @@ jobs:
       # 👇 Store the dist folder
       - uses: actions/upload-artifact@v3
         with:
-          name: app-build
-          path: dist
+          name: build
+          path: ./portfolio_app/build/
 
   deploy:
     needs: [build]
@@ -30,7 +30,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
-          name: app-build
+          name: build
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -42,4 +42,4 @@ jobs:
           aws-region: ap-northeast-1
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync app-build s3://portfolio-app-rjomega --delete
+          aws s3 sync ./portfolio_app/build/ s3://portfolio-app-rjomega --delete
