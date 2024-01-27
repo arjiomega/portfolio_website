@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: build
+        working-directory: ./portfolio_app
         run: npm install && npm run build
 
       # 👇 Store the dist folder
