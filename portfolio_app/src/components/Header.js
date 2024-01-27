@@ -1,5 +1,5 @@
 import React from "react";
-import ReactTyped from "react-typed";
+import { ReactTyped } from "react-typed";
 
 import "../assets/css/header.css"
 import "../assets/css/mediaheader.css"
