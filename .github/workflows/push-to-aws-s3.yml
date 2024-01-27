@@ -51,5 +51,5 @@ jobs:
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync . s3://portfolio-app-rjomega --delete
+          aws s3 sync ./portfolio_app/build/ s3://portfolio-app-rjomega --delete
 
