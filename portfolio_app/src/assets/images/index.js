@@ -9,6 +9,9 @@ import PuzzleCvGif from './puzzle_cv.gif'
 import ParkingLotGif from './parkinglot.gif'
 import ParkingLotMLImg from './parkinglotML.png'
 import RecommenderImg from './recommender.png'
+import StoreSalesForecastingGif from './StoreSalesForecasting.gif'
+import NumberPredictorImg from './numberpredictor.png'
+import CatDogGif from './catdogtemporary.gif'
 
 export {
     FanOptimizationImg,
@@ -21,5 +24,8 @@ export {
     PuzzleCvGif,
     ParkingLotGif,
     ParkingLotMLImg,
-    RecommenderImg
+    RecommenderImg,
+    StoreSalesForecastingGif,
+    NumberPredictorImg,
+    CatDogGif
 }

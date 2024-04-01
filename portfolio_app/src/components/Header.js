@@ -35,11 +35,11 @@ export const Header = () => {
             <div className="btn-container">
                 <button
                 className="btn btn-color-2"
-                onclick="window.open('./assets/resume-example.pdf')"
+                onClick="window.open('./assets/resume-example.pdf')"
                 >
                 Download CV
                 </button>
-                <button className="btn btn-color-1" onclick="location.href='./#contact'">
+                <button className="btn btn-color-1" onClick="location.href='./#contact'">
                 Contact Info
                 </button>
             </div>
@@ -49,13 +49,13 @@ export const Header = () => {
                 src={GithubLogo}
                 alt="My LinkedIn profile"
                 className="icon"
-                onclick="location.href='https://www.linkedin.com/in/richardomega/'"
+                onClick="location.href='https://www.linkedin.com/in/richardomega/'"
                 />
                 <img
                 src={LinkedinLogo}
                 alt="My Github profile"
                 className="icon"
-                onclick="location.href='https://github.com/arjiomega'"
+                onClick="location.href='https://github.com/arjiomega'"
                 />
             </div>
 

@@ -84,6 +84,34 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                     repo_url = "https://github.com/arjiomega/ComputerVision_Puzzle"
                 />
 
+                <Project 
+                    img_url = {Image.StoreSalesForecastingGif}
+                    title = "Store Sales Forecasting Model Decay Simulation"
+                    description = "Simulate monthly incoming data every minute or as set in the cron schedule using 
+                                    dagster for orchestration and snowflake. Model retraining will be triggered after 
+                                    detecting data and/or model drift.
+                                    "
+                    repo_url = "https://github.com/arjiomega/Store-Sales-Forecasting-Model-Decay-Simulation"
+                />
+
+                <Project 
+                    img_url = {Image.NumberPredictorImg}
+                    title = "Number Predictor Web App"
+                    description = "Predicts what the user writes in the Streamlit Web App using the trained model.
+                                    "
+                    repo_url = "https://github.com/arjiomega/number-predictor"
+                />
+
+                <Project 
+                    img_url = {Image.CatDogGif}
+                    title = "Cat and Dog Semantic Segmentation"
+                    description = "Implementation of Debugging set introduced by Cassie Kozyrkov of Google to 
+                                    get a better understanding of model performance in subclass level and 
+                                    also to better understand data to model relationship for data preparation 
+                                    phase. Implemented the model as mentioned on the paper. 
+                                    "
+                    repo_url = "https://github.com/arjiomega/cat-vs-dog-multiclass-semantic-segmentation"
+                />
 
                 <Project 
                     img_url = {Image.RecommenderImg}
