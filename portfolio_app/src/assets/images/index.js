@@ -12,6 +12,10 @@ import RecommenderImg from './recommender.png'
 import StoreSalesForecastingGif from './StoreSalesForecasting.gif'
 import NumberPredictorImg from './numberpredictor.png'
 import CatDogGif from './catdogtemporary.gif'
+import WeldGif from './weld_gif.gif'
+import farmImg from './farmPicture.png'
+import chatbotImg from './chatbotImg.png'
+import xrayImg from './xray_ai.jpg'
 
 export {
     FanOptimizationImg,
@@ -27,5 +31,9 @@ export {
     RecommenderImg,
     StoreSalesForecastingGif,
     NumberPredictorImg,
-    CatDogGif
+    CatDogGif,
+    WeldGif,
+    farmImg,
+    chatbotImg,
+    xrayImg
 }
